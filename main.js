@@ -20,7 +20,11 @@ const calTip = () => {
     }
     else {
         let tipAmt = bill * rt;
-        tip.innerHTML = `Tip $ ${tipAmt}`
+        tipAmt = Math.ceil(tipAmt);
+        tip.innerHTML = `Tip is : ${tipAmt}$`;
+
+        let totalAmt = Number(bill) + tipAmt;
+        total.innerHTML = `Total Amount is : ${totalAmt}$`;
     }
 }
 btn.addEventListener("click", calTip);
@@ -30,4 +34,3 @@ const hiderr = () => {
     err.style.display = "none";
   }, 6000);
 };
-
