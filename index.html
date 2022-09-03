@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator App</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calc">
+            <h2>Tip Calculator</h2>
+            <form action="">
+              <div>
+                <label for="">Bill : </label>
+                <input type="text" placeholder="$" class="bill">
+              </div>  
+                <div>
+                <label for="" class="ser">Service Tip : </label>
+                <select name="" class="rate">
+                    <option disabled selected value="0">--Select an Option--</option>
+                    <option value="0.15">15% - Excellent</option>
+                    <option value="0.10">10% - Good</option>
+                    <option value="0.05">5% - Fair</option>
+                </select>
+              </div>  
+              <button type="button" class="btn">Calculate</button>
+              <p class="error">Please, Enter your Bill and Service </p>
+            </form>
+            <div class="result">
+                <p class="tip">Tip Amount : 0</p>
+                <p class="total">Total Amount : 0</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

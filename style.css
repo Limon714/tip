@@ -1,0 +1,75 @@
+body{
+    background: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.calc{
+    background: rgb(253, 253, 253);
+    width: 20rem;
+}
+h2{
+    text-align: center;
+    background-color: rgb(212, 183, 18);
+    padding: 10px 0px;
+    margin-top: -10px;
+}
+form, form > *{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #333;
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, select{
+    font-size: 1rem;
+    text-align: right;
+    padding: 5px;
+    outline: none;
+}
+.btn{
+background: rgb(212, 183, 18);
+border: none;
+font-size: 20px;
+font-weight: 600px;
+cursor: pointer;
+}
+.btn:hover{
+background-color: rgb(63, 5, 53);
+color: rgb(236, 206, 31);
+}
+.error{
+    color: rgb(214, 36, 36);
+    display: none;
+}
+.ser{
+border-bottom: 0px solid;
+}
+
+.result{
+    padding:5px;
+    margin: 0 auto;
+    width: 90%;
+}
+.result> *{
+    background-color: rgb(223, 207, 207);
+    padding: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.total{
+    color: rgb(143, 125, 21);
+}
